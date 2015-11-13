@@ -33,7 +33,7 @@
   OR
     
   * **Code:** 400 BAD REQUEST <br />
-    **Content:** `{ "error" : "null can`t be as name" }`
+    **Content:** `{ "error" : "null can't be as name" }`
 
  
 * **Sample Call:**
