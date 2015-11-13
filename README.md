@@ -23,17 +23,17 @@
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** `{ status : "ok" }` 
+    **Content:** none 
     
 * **Error Response:**
 
-  * **Code:** 200 <br />
-    **Content:** `{ status : "error", data : "Counter name exist" }`
+ * **Code:** 400 BAD REQUEST <br />
+    **Content:** `{"error" : "Counter name exist" }`
     
   OR
     
-  * **Code:** 200 <br />
-    **Content:** `{ status : "error", data : "null can't be as name" }`
+  * **Code:** 400 BAD REQUEST <br />
+    **Content:** `{ "error" : "null can`t be as name" }`
 
  
 * **Sample Call:**
@@ -75,17 +75,17 @@
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** `{ status : "ok" }` 
+    **Content:** none
     
 * **Error Response:**
 
-  * **Code:** 200 <br />
-    **Content:** `{ status : "error", data : "Counter name exist" }`
+  * **Code:** 400 BAD REQUEST <br />
+    **Content:** `{"error" : "Counter name exist" }`
     
   OR
     
-  * **Code:** 200 <br />
-    **Content:** `{ status : "error", data : "null can't be as name" }`
+  * **Code:** 400 BAD REQUEST <br />
+    **Content:** `{ "error" : "null can`t be as name" }`
 
  
 * **Sample Call:**
@@ -127,12 +127,12 @@ Delete counter from list
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** `{ status : "ok" }` 
+    **Content:** none 
     
 * **Error Response:**
 
-  * **Code:** 200 <br />
-    **Content:** `{ status : "error", data : "Counter name not exist" }`
+  * **Code:** 404 NOT FOUND <br />
+    **Content:** `{ "error" : "Counter name not exist" }`
     
 * **Sample Call:**
 
@@ -174,17 +174,17 @@ Set counter value
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** `{ status : "ok" }` 
+    **Content:** none 
     
 * **Error Response:**
 
-  * **Code:** 200 <br />
-    **Content:** `{ status : "error", data : "Counter name not exist" }`
+  * **Code:** 404 NOT FOUND <br />
+    **Content:** `{ "error" : "Counter name not exist" }`
     
  OR
  
-  * **Code:** 200 <br />
-    **Content:** `{ status : "error", data : "Value cannot be negative" }`   
+  * **Code:** 400 BAD REQUEST <br />
+    **Content:** `{"error" : "Value cannot be negative" }`   
     
 * **Sample Call:**
 
@@ -226,17 +226,17 @@ Increase counter value
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** `{ status : "ok" }` 
+    **Content:** none
     
 * **Error Response:**
 
-  * **Code:** 200 <br />
-    **Content:** `{ status : "error", data : "Counter name not exist" }`
+  * **Code:** 404 NOT FOUND <br />
+    **Content:** `{ "error" : "Counter name not exist" }`
     
  OR
  
-  * **Code:** 200 <br />
-    **Content:** `{ status : "error", data : "Value cannot be negative" }`   
+  * **Code:** 400 BAD REQUEST <br />
+    **Content:** `{"error" : "Value cannot be negative" }`   
     
 * **Sample Call:**
 
@@ -275,12 +275,12 @@ Increase counter value
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** `{ status : "ok" , {name:"counter1",value:10}` 
+    **Content:** `{name:"counter1",value:10}` 
   
  * **Error Response:**
 
-  * **Code:** 200 <br />
-    **Content:** `{ status : "error", data : "Counter name not exist" }`  
+  * **Code:** Code: 404 NOT FOUND <br />
+    **Content:** `{"error" : "Counter name not exist" }`  
 
  
 * **Sample Call:**
@@ -319,7 +319,7 @@ Return list of all counter
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** `{ status : "ok" , data: [{name:"counter1",value:10},{name:"counter2",value:20}]}` 
+    **Content:** `[{name:"counter1",value:10},{name:"counter2",value:20}]` 
     
 * **Sample Call:**
 
