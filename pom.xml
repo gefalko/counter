@@ -58,7 +58,7 @@
   </dependencies>
   
   <build>
-	<finalName>counter</finalName>
+	<finalName>counterService</finalName>
 	  <plugins>
 	    <plugin>
           <groupId>org.wildfly.plugins</groupId>
