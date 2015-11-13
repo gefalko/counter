@@ -1,3 +1,21 @@
+# Get counter
+
+```
+$ git clone https://github.com/gefalko/counter.git
+$ cd ./counter
+$ mvn wildfly:deploy
+
+checked on 
+
+ubuntu 14.10
+maven 3.13.0-65-generic
+wildfly 8.2
+
+e.g url: http://localhost:8080/counterService/rest/create?name=test
+```
+
+# Using service API
+
 **Create counter**
 ----
   Create new counter and add to the list
