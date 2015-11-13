@@ -103,7 +103,7 @@ e.g url: http://localhost:8080/counterService/rest/create?name=test
   OR
     
   * **Code:** 400 BAD REQUEST <br />
-    **Content:** `{ "error" : "null can`t be as name" }`
+    **Content:** `{ "error" : "null can't be as name" }`
 
  
 * **Sample Call:**
