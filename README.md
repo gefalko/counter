@@ -85,7 +85,7 @@
   OR
     
   * **Code:** 200 <br />
-    **Content:** `{ status : "error", data : "null can`t be as name" }`
+    **Content:** `{ status : "error", data : "null can't be as name" }`
 
  
 * **Sample Call:**
